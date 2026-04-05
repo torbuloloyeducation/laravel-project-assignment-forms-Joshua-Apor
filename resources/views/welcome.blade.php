@@ -1,4 +1,8 @@
 <x-layout><br><br><br><br>    
+
+<form method="POST" action="/formtest">
+    @csrf
+
     <div class="border-b border-white/10 pb-12">
       <h2 class="text-base/7 font-semibold text-white">Personal Information</h2>
       <p class="mt-1 text-sm/6 text-gray-400">Use a permanent address where you can receive mail.</p>
@@ -27,6 +31,6 @@
         <div class="mt-10 flex items-center justify-end gap-x-6">
     <button type="submit" class="rounded-md bg-green-500 px-3 py-2 text-sm font-semibold text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500">Save</button>
   </div>
-
+</form>
     
 </x-layout>
